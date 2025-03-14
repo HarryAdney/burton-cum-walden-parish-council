@@ -1,0 +1,52 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Welcome to West Burton</h1>
+			<img src="/west-burton-village.jpg" alt="West Burton Village" class="hero-image" />
+			<p>
+				West Burton is one of the most beautiful villages in Wensleydale, situated in a stunning location
+				within the Yorkshire Dales National Park. The village is built around a large village green with
+				an ancient market cross at its center.
+			</p>
+			<p>
+				Known for its spectacular Cauldron Falls and traditional Yorkshire character, West Burton offers
+				visitors a perfect base for exploring the Yorkshire Dales.
+			</p>
+
+			<div class="features">
+				<div class="feature">
+					<h2>Local Amenities</h2>
+					<p>Village shop, pub, tea room, and craft workshops</p>
+				</div>
+				
+				<div class="feature">
+					<h2>Natural Beauty</h2>
+					<p>Stunning waterfalls, walking trails, and scenic views</p>
+				</div>
+				
+				<div class="feature">
+					<h2>Rich History</h2>
+					<p>Ancient market cross, traditional buildings, and Yorkshire heritage</p>
+				</div>
+			</div>
+
+			<p class="cta">
+				<a href="/accommodation" class="button">Find Places to Stay</a>
+				<a href="/activities" class="button">Discover Activities</a>
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>

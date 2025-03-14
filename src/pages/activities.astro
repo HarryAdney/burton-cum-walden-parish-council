@@ -1,0 +1,53 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Activities | West Burton" description="Things to do in West Burton" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Things to Do</h1>
+			
+			<section>
+				<h2>Walking & Hiking</h2>
+				<p>
+					West Burton offers numerous walking trails suitable for all abilities. Don't miss the
+					spectacular Cauldron Falls, one of Yorkshire's hidden gems.
+				</p>
+			</section>
+
+			<div class="features">
+				<div class="feature">
+					<h2>Cauldron Falls</h2>
+					<p>Visit our beautiful waterfall, perfect for photography and picnics</p>
+				</div>
+				
+				<div class="feature">
+					<h2>Village Walks</h2>
+					<p>Explore the village and its surrounding countryside on marked trails</p>
+				</div>
+				
+				<div class="feature">
+					<h2>Cycling Routes</h2>
+					<p>Discover the Yorkshire Dales on two wheels with local cycling routes</p>
+				</div>
+			</div>
+
+			<section>
+				<h2>Local Events</h2>
+				<p>
+					Throughout the year, West Burton hosts various events including village fetes,
+					local markets, and traditional Yorkshire celebrations.
+				</p>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

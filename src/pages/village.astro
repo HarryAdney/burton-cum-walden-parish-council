@@ -1,0 +1,57 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="The Village | West Burton" description="Learn about West Burton village" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>The Village</h1>
+			<img src="/west-burton-village.jpg" alt="West Burton Village" class="hero-image" />
+			
+			<section>
+				<h2>About West Burton</h2>
+				<p>
+					West Burton, nestled in the heart of Wensleydale, is often described as one of Yorkshire's
+					prettiest villages. Built around its spacious village green, complete with its own waterfall,
+					it offers visitors a glimpse into traditional Yorkshire life.
+				</p>
+			</section>
+
+			<section>
+				<h2>Local Amenities</h2>
+				<div class="features">
+					<div class="feature">
+						<h3>Village Shop</h3>
+						<p>Well-stocked local store providing essentials and local produce</p>
+					</div>
+					<div class="feature">
+						<h3>The Fox & Hounds Inn</h3>
+						<p>Traditional Yorkshire pub serving local ales and home-cooked food</p>
+					</div>
+					<div class="feature">
+						<h3>Tea Room</h3>
+						<p>Enjoy Yorkshire tea and homemade cakes in a cozy setting</p>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2>The Village Green</h2>
+				<p>
+					The village green is the heart of West Burton, featuring an ancient market cross and
+					surrounded by traditional stone buildings. It's the perfect spot for picnics and community
+					gatherings.
+				</p>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

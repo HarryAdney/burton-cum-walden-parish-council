@@ -1,0 +1,48 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Contact | West Burton" description="Contact information for West Burton" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Contact Us</h1>
+			
+			<section>
+				<h2>Get in Touch</h2>
+				<p>
+					For general inquiries about West Burton village or to learn more about visiting our
+					beautiful corner of the Yorkshire Dales, please use the information below.
+				</p>
+			</section>
+
+			<div class="features">
+				<div class="feature">
+					<h2>Village Information</h2>
+					<p>
+						West Burton<br>
+						Leyburn<br>
+						North Yorkshire<br>
+						DL8 4JX
+					</p>
+				</div>
+				
+				<div class="feature">
+					<h2>Tourist Information</h2>
+					<p>
+						For tourist information, please visit the Yorkshire Dales National Park website or
+						contact the local tourist office.
+					</p>
+				</div>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>
